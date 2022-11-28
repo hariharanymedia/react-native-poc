@@ -8,7 +8,7 @@ A simple POC on react native - that showcases the following:
 2. API integration
 3. React Native Map integration
 4. Styling in React Native
-5. Profeciency in React Concepts
+5. Proficiency  in React Concepts
 
 ## How to get started ?
 
