@@ -1,15 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { useState, useEffect } from "react";
-import { Dimensions, StyleSheet, View } from "react-native";
-import MapView from "react-native-maps";
+import { Dimensions, StyleSheet } from "react-native";
+import MapView, { Marker } from "react-native-maps";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { GenerateUser } from "./pages/GenerateUser";
 import { UserInfo } from "./pages/UserInfo";
-
 import { getRandomUser } from "./util/getRandomUser";
-import { Marker } from "react-native-maps";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +20,7 @@ export default function App() {
 
   async function fetchRandomUser() {
     const users = await getRandomUser();
+    console.log("hh", users);
     setUsersList(users.data);
   }
 
