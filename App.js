@@ -20,7 +20,6 @@ export default function App() {
 
   async function fetchRandomUser() {
     const users = await getRandomUser();
-    console.log("hh", users);
     setUsersList(users.data);
   }
 
